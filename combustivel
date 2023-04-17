@@ -1,0 +1,25 @@
+gasolina = 0
+alcool = 0
+diesel = 0
+
+while True:
+    try:
+        valor1 = int(input("Informe um codigo (1, 2, 3) ou 4 para parar:"))
+        if valor1 < 1 or valor1 > 4:
+            raise ValueError
+        else:
+            if valor1 == 1:
+                alcool = alcool+1
+            elif valor1 == 2:
+                gasolina = gasolina+1
+            elif valor1 == 3:
+                diesel = diesel+1
+            elif valor1 == 4:
+                break
+    except ValueError:
+        pass
+
+print('MUITO OBRIGADO')
+print(f' alcool: {alcool}')
+print(f' gasolina:{gasolina}')
+print(f' diesel:{diesel}')
