@@ -1,0 +1,8 @@
+glicose = float(input('Digite a medida da glicose:'))
+
+if glicose <= 100:
+    print(f'Classificação: normal')
+elif glicose > 139:
+    print('Classificação: Diabets')
+else:
+    print('Classificação: Pré-Diabets')
