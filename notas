@@ -1,0 +1,14 @@
+nota1 = input('Digite a nota do primeiro semestre:')
+nota2 = input("Digite a nota do segundo semetre:")
+
+print('LEMBRANDO QUE A NOTA NECESSÁRIA PARA APROVAÇÃO TEM QUE SER MAIOR QUE 60.0')
+
+media = (float(nota1) + float(nota2)) / 2
+
+
+if float(media) >= 60:
+    print(f'nota final: {media}')
+    print('APROVADO!')
+else:
+    print(f'nota final: {media}')
+    print('REPROVADO!')
