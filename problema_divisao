@@ -1,0 +1,25 @@
+while True:
+    try:
+        quantidade = int(input('Quantos casos voce vai digitar?'))
+        break
+    except ValueError:
+        print('EROO! digite um numero inteiro.')
+
+a = 0
+b = 0
+resultado = 0
+
+for i in range(quantidade):
+    while True:
+        try:
+            a = int(input('Entre com o numerador:'))
+            b = int(input('Entre com o denominador:'))
+            break
+        except ValueError:
+            print('EROO! digite um numero inteiro.')
+
+    if b == 0:
+        print('DIVISAO IMPOSSIVEL')
+    else:
+        resultado = a / b
+        print(f'DIVISAO = {resultado:.2f}')
