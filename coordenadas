@@ -1,0 +1,29 @@
+x = input('Digite o valor de x: ')
+y = input('Digite o valor de y: ')
+
+if x.startswith('-'):
+    x = float(x[1:]) * -1
+else:
+    x = float(x)
+
+if y.startswith('-'):
+    y = float(y[1:]) * -1
+else:
+    y = float(y)
+
+if x > 0 and y > 0:
+    print('Resultado: Q1')
+elif x < 0 and y > 0:
+    print('Resultado: Q2')
+elif x < 0 and y < 0:
+    print('Resultado: Q3')
+elif x > 0 and y < 0:
+    print('Resultado: Q4')
+elif x == 0 and y == 0:
+    print('Origem')
+elif x == 0 and y != 0:
+    print('EIXO X')
+elif y == 0 and x != 0:
+    print('EIXO Y')
+else:
+    print('Digite apenas números!')
