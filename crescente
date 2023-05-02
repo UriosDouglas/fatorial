@@ -1,0 +1,16 @@
+print('Digite dois numeros:')
+
+x = int(input())
+y = int(input())
+if x > y:
+    print('DECRESCENTE')
+else:
+    print('CRESCENTE')
+
+while x != y:
+    x = int(input())
+    y = int(input())
+    if x > y:
+        print('DECRESCENTE')
+    else:
+        print('CRESCENTE')
