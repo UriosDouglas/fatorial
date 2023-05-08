@@ -1,0 +1,10 @@
+min_consumo = int(input('Digite os minutos utilizados:'))
+
+plano = float(50.00)
+direito = int(100)
+
+if min_consumo < 100:
+    print(f'Valor a pagar : R${plano:.2f}')
+else:
+    valor_a_pagar = plano + ((min_consumo - direito) * 2)
+    print(f'Valor a pagar:R${valor_a_pagar:.2f}')
