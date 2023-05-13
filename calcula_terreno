@@ -1,0 +1,12 @@
+ # PROGRAMA PARA CALCULAR O VALOR DE UM TERRENO
+
+(largura) = input('Digite a largura do terreno :')
+comprimento = input('Digite o comprimento do terren: ')
+metro_quadrado = input('Digite o valor do metro quadrado: ')
+
+area = float(largura) * float(comprimento)
+preco = float(area) * float(metro_quadrado)
+
+print(f' A area do terreno é de: {area}')
+
+print(f' O preco do terreno por metro quadrado é de: {preco}')
