@@ -1,0 +1,11 @@
+senha = int(input('Digite a senha:'))
+
+if senha == 2002:
+    print('Acesso permitido')
+else:
+    senha = int(input('Senha Invalida! Tente novamente:'))
+
+while senha != 2002:
+    senha = int(input('Senha Invalida! Tente novamente:'))
+
+print('Acesso permitido! ')
