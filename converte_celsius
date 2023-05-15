@@ -1,0 +1,13 @@
+pergunta = input('Você vai digitar a temperatura em qual escala (C/F) ?')
+
+if pergunta == 'C':
+    temperatura = float(input('Digite a temperatura em Celsius:'))
+    fahrenheit = temperatura*1.8 + 32
+    print(f'Temperatura equivalente em Fahrenheit:{fahrenheit:.2f}')
+elif pergunta == 'F':
+    temperatura = float(input('Digite a temperatura em Fahrenheit:'))
+    celsius = (temperatura-32) / 1.8
+    print(f'Temperatura equivalente em Celsius:{celsius:.2f}')
+else:
+    print("Por favor, Digite C ou F.")
+    
